@@ -1,0 +1,85 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('animation.gif');
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+                0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #15151550;
+    backdrop-filter: blur(23px);
+    gap: 20px;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    border: 3px solid rgba(0, 255, 255, 0.5);
+}
+
+.text-content {
+}
+
+h2 {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.description {
+    font-weight: 400;
+    margin: 0 0 0;
+    color: #ccc;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links a {
+    display: inline-block;
+    color: #ffffff50;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.links a:hover {
+    color: #ddd;
+    transform: scale(1.1);
+}
+
+.links img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s;
+}
+
+.links a:hover img {
+    opacity: 0.8;
+}
